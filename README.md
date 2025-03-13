@@ -14,7 +14,7 @@ The **Answer Evaluator** uses a variety of NLP techniques to evaluate student re
 - **Multinomial Naive Bayes**: Probabilistic analysis
 - **Coherence and Relevance Scores**: Assessing logical flow and content relevance
 
-## Technologies Used \ud83d\ude80
+## Technologies Used
 
 - **Flask**: Micro web framework for Python
 - **Python**: Primary programming language
