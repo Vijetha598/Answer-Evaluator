@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Answer Evaluator</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='namari-color.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='font-awesome.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='animate.css')}}"/>
+
+
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+
+<br><br><br>
+
+<div style="font-family: 'Playfair Display', serif; font-size: 90px; text-align: center; font-weight: bold; color:rgb(11, 11, 11);">
+    Answer Evaluator
+</div>
+<!-- Google Font Link -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    </header>
+        <!--Pricing Tables-->
+        <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+                <!--Pricing Block-->
+                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pricing-block-content">
+                        <h3>Admin</h3>
+                        <blockquote class="testimonial classic">
+                            <img src="{{ url_for('static', filename='images/banner-images/admin_image.jpg') }}" alt="User"/>
+                        </blockquote>
+                        <a href="{{ url_for('admin_home') }}" class="button">Login as Admin</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+                <!--Pricing Block-->
+                <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="pricing-block-content">
+                        <h3>Teacher</h3>
+                        <blockquote class="testimonial classic">
+                            <img src="{{ url_for('static', filename='images/banner-images/teacher_image.jpg') }}" alt="User"/>
+                        </blockquote>
+                        
+                        <a href="{{ url_for('teacher_home') }}" class="button">Login as Teacher</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+                <!--Pricing Block-->
+                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="pricing-block-content">
+                        <h3>Student</h3>
+                        <blockquote class="testimonial classic">
+                            <img src="{{ url_for('static', filename='images/banner-images/student_image2.gif') }}" alt="User"/>
+                        </blockquote>
+
+                        <a href="{{ url_for('student_home') }}" class="button">Login as Student</a>
+                    </div>
+                </div>
+                <!--End Pricing Block-->
+
+            </div>
+        </section>
+        <!--End of Pricing Tables-->
+
+    </main>
+    <!--End Main Content Area-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="{{url_for('static',filename="js/jquery.1.8.3.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/featherlight.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/featherlight.gallery.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.enllax.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.scrollUp.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.easing.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.easing.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.stickyNavbar.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/jquery.waypoints.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/images-loaded.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/lightbox.min.js")}}"></script>
+<script src="{{url_for('static',filename="js/site.js")}}"></script>
+
+
+</body>
+<style>
+  #banner {
+      background: url("{{ url_for('static', filename='images/banner-images/download.gif') }}") no-repeat center top;
+      background-size: cover;
+  }
+
+</style>
+</html>
